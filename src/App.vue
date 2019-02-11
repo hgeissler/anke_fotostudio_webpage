@@ -1,9 +1,9 @@
 <template>
   <v-app dark>
-    <v-img 
+    <v-img
       app 
-      src="https://images.unsplash.com/photo-1498050842100-717f08672ac6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80" 
-      height="300"
+      :src="require(`@/assets/header-img.png`)" 
+      height="25vh"
     >
         <v-layout pa-2 column fill-height class="lightbox white--text" justify-center align-center>
           <v-spacer></v-spacer>
@@ -26,7 +26,7 @@
         </v-btn>
         <v-btn flat>
           <v-icon>photo_library</v-icon>
-          Gallerie
+          Portfolio
         </v-btn>
         <v-btn flat>
           <v-icon>message</v-icon>
@@ -165,10 +165,22 @@
 
   #subheader {
     font-size: 24px;
+    text-shadow: 1px 2px 1px #333;
   }
 
   #header {
     font-size: 44px;
+    text-shadow: 2px 3px 2px #333;
+  }
+
+  @media (max-width: 600px) {
+   #header {
+     font-size: 32px;
+   }
+   
+   #subheader {
+     font-size: 16px;
+   }
   }
 </style> 
 
