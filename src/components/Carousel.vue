@@ -1,9 +1,9 @@
 <template>
-  <v-carousel height="450px">
+  <v-carousel>
     <v-carousel-item
       v-for="(item, i) in items"
       :key="i"
-      :src="item.src"
+      :src="require('item.src')""
     >
       <v-container fill-height>
         <v-layout column fill-height justify-center align-center>
@@ -35,7 +35,7 @@ export default {
     return {
       items: [
         {
-          src: 'https://images.unsplash.com/photo-1531251445707-1f000e1e87d0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80'
+          src: "'@/assets/img/paerchen-1000.png'"
         },
         {
           src: 'https://images.unsplash.com/photo-1521543269800-27e08780ced7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80'
