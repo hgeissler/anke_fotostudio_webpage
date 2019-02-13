@@ -1,9 +1,9 @@
 <template>
-  <v-carousel>
+  <v-carousel id="carousel">
     <v-carousel-item
       v-for="(item, i) in items"
       :key="i"
-      :src="require('item.src')""
+      :src="item.src"
     >
       <v-container fill-height>
         <v-layout column fill-height justify-center align-center>
@@ -21,10 +21,23 @@
 
 <style scoped>
   .imgheadline {
-    font: 32px Comfortaa;
+    font: 38px Comfortaa;
     line-height: 400;
     text-shadow: 1px 1px 1px #333;
-    opacity: 0.6;
+    opacity: 0.7;
+  }
+
+  @media (max-width: 1265px) {
+    #carousel {
+      height: 350px !important;
+    }
+  }
+
+  /* für 4k überarbeiten: */
+  @media (min-width: 1904px) {
+    #carousel {
+      height: 800px !important;
+    }
   }
 </style>
 
@@ -34,8 +47,11 @@ export default {
   data() {
     return {
       items: [
+        // {
+        //   src: "'@/assets/img/paerchen-1000.png'"
+        // },
         {
-          src: "'@/assets/img/paerchen-1000.png'"
+          src: 'https://images.unsplash.com/photo-1531251445707-1f000e1e87d0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80'
         },
         {
           src: 'https://images.unsplash.com/photo-1521543269800-27e08780ced7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80'
