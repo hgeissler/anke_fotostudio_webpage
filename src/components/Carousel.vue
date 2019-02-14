@@ -1,43 +1,93 @@
 <template>
-  <v-carousel id="carousel">
-    <v-carousel-item
-      v-for="(item, i) in items"
-      :key="i"
-      :src="item.src"
+  <v-layout>
+    <v-carousel 
+      delimiter-icon="stop"
+      class="hidden-sm-and-down hidden-lg-and-up"
     >
-      <v-container fill-height>
-        <v-layout column fill-height justify-center align-center>
-          <v-flex xs12>
-            <span v-if="i == 0" class="imgheadline">Portrait</span>
-            <span v-if="i == 1" class="imgheadline">Hochzeit</span>
-            <span v-if="i == 2" class="imgheadline">Pärchen</span>
-            <span v-if="i == 3" class="imgheadline">Akt</span>
-          </v-flex>
-        </v-layout>
-      </v-container>
-    </v-carousel-item>
+      <v-carousel-item
+        v-for="(item, i) in items"
+        :key="i"
+        :src="item.src"
+        lazy
+      >
+        <v-container>
+          <v-layout column fill-height justify-center align-center>
+            <v-flex xs12>
+              <span v-if="i == 0" class="imgheadline">Portrait</span>
+              <span v-if="i == 1" class="imgheadline">Hochzeit</span>
+              <span v-if="i == 2" class="imgheadline">Pärchen</span>
+              <span v-if="i == 3" class="imgheadline">Akt</span>
+            </v-flex>
+          </v-layout>
+        </v-container>
+      </v-carousel-item>
     </v-carousel>
+
+    <v-carousel 
+      delimiter-icon="stop"
+      class="hidden-md-and-up"
+      height="350px"
+    >
+      <v-carousel-item
+        v-for="(item, i) in items"
+        :key="i"
+        :src="item.src"
+        lazy
+      >
+        <v-container>
+          <v-layout column fill-height justify-center align-center>
+            <v-flex xs12>
+              <span v-if="i == 0" class="imgheadline sm">Portrait</span>
+              <span v-if="i == 1" class="imgheadline sm">Hochzeit</span>
+              <span v-if="i == 2" class="imgheadline sm">Pärchen</span>
+              <span v-if="i == 3" class="imgheadline sm">Akt</span>
+            </v-flex>
+          </v-layout>
+        </v-container>
+      </v-carousel-item>
+    </v-carousel>
+
+    <v-carousel 
+      delimiter-icon="stop"
+      class="hidden-md-and-down"
+      height="600px"
+    >
+      <v-carousel-item
+        v-for="(item, i) in items"
+        :key="i"
+        :src="item.src"
+        lazy
+      >
+        <v-container>
+          <v-layout column fill-height justify-center align-center>
+            <v-flex xs12>
+              <span v-if="i == 0" class="imgheadline lg">Portrait</span>
+              <span v-if="i == 1" class="imgheadline lg">Hochzeit</span>
+              <span v-if="i == 2" class="imgheadline lg">Pärchen</span>
+              <span v-if="i == 3" class="imgheadline lg">Akt</span>
+            </v-flex>
+          </v-layout>
+        </v-container>
+      </v-carousel-item>
+    </v-carousel>
+
+  </v-layout>
 </template>
 
 <style scoped>
   .imgheadline {
     font: 38px Comfortaa;
-    line-height: 400;
+    line-height: 452px;
     text-shadow: 1px 1px 1px #333;
-    opacity: 0.7;
+    opacity: 0.4;
   }
 
-  @media (max-width: 1265px) {
-    #carousel {
-      height: 350px !important;
-    }
+  .sm {
+    line-height: 318px;
   }
 
-  /* für 4k überarbeiten: */
-  @media (min-width: 1904px) {
-    #carousel {
-      height: 800px !important;
-    }
+  .lg {
+    line-height: 552px;
   }
 </style>
 

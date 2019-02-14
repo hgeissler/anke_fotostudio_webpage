@@ -1,6 +1,6 @@
 <template>
   <v-app dark>
-    <v-container fluid fill-height class="pa-2">
+    <v-container fill-height class="pa-2">
       <v-layout align-center justify-center>
         <v-flex lg8 md10 sm11 xs12>
           <v-img
