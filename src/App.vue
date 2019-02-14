@@ -115,62 +115,82 @@
           <v-content class="pa-0">
             <Carousel />
 
-            <!-- quote -->
+            <!-- Layout -->
+            <v-layout class="mt-3" row wrap>
 
-            <v-layout 
-              row reverse 
-              class="mt-3"
-            >
-              <v-flex xl5 lg6 md7 sm8 xs12>
-                <v-card class="teal">
-                  <v-card-text class="kalam">
-                    „Auf einem guten Foto sehen wir die Welt so, wie wir sie kennen. <br>
-                    Ein klasse Foto zeigt die Welt, wie wir sie noch nie gesehen haben.”
+              <!-- Portfolio -->
+
+              <v-flex d-flex xl7 class="pr-3">
+
+                <v-card>
+                  <v-card-title class="headline grey darken-2">
+                    Portfolio
+                  </v-card-title>
+
+                  <v-card-text >
+                    <p>Portrait</p>
+                    <p class="ml-5 xsPortfolio">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit non aliquid cumque dolorem illum natus minima, amet earum delectus nemo illo esse aliquam, consectetur itaque perspiciatis rerum voluptatum consequatur pariatur?
+                    </p>
+                  </v-card-text>
+                  <v-divider></v-divider>              
+
+                  <v-card-text >
+                    <p>Hochzeit</p>
+                    <p class="ml-5 xsPortfolio">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit non aliquid cumque dolorem illum natus minima, amet earum delectus nemo illo esse aliquam, consectetur itaque perspiciatis rerum voluptatum consequatur pariatur?
+                    </p>
+                  </v-card-text>
+                  <v-divider></v-divider>
+
+                  <v-card-text >
+                    <p>Pärchen</p>
+                    <p class="ml-5 xsPortfolio">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit non aliquid cumque dolorem illum natus minima, amet earum delectus nemo illo esse aliquam, consectetur itaque perspiciatis rerum voluptatum consequatur pariatur?
+                    </p>
+                  </v-card-text>
+                  <v-divider></v-divider>
+
+                  <v-card-text >
+                    <p>Akt</p>
+                    <p class="ml-5 xsPortfolio">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit non aliquid cumque dolorem illum natus minima, amet earum delectus nemo illo esse aliquam, consectetur itaque perspiciatis rerum voluptatum consequatur pariatur?
+                    </p>
                   </v-card-text>
                 </v-card>
               </v-flex>
+
+              <v-flex d-flex xl5>
+                <v-layout row wrap>
+
+                  <!-- quote -->
+
+                  <v-flex d-flex class="pb-3">
+                    <v-card class="teal">
+                      <v-card-text class="kalam">
+                        „Auf einem guten Foto sehen wir die Welt so, wie wir sie kennen. <br>
+                        Ein klasse Foto zeigt die Welt, wie wir sie noch nie gesehen haben.”
+                      </v-card-text>
+                    </v-card>
+                  </v-flex>
+
+                  <!-- About me: -->
+                  <v-flex d-flex>
+                    <v-card class="grey darken-2">
+                      <v-card-title class="headline">
+                        Über Mich:
+                      </v-card-title>
+                      <v-card-text class="body-1">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid cumque quae a nesciunt? Natus, molestias. Accusantium repudiandae necessitatibus hic quos nesciunt, magnam aliquid laborum explicabo sequi fugiat laudantium maxime provident.</p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione eaque possimus rem est? Molestiae quo optio animi modi, in natus. Deleniti doloribus tempore molestiae voluptatibus non amet aperiam, quos aliquam.</p>
+                      </v-card-text>
+                    </v-card>
+                  </v-flex>
+                </v-layout>
+              </v-flex>
+
+
             </v-layout>
-
-            <!-- Portfolio -->
-
-            <v-card class="mt-3">
-              <v-card-title class="headline grey darken-2">
-                Portfolio
-              </v-card-title>
-
-              <v-card-text >
-                <p>Portrait</p>
-                <p class="ml-5 xsPortfolio">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit non aliquid cumque dolorem illum natus minima, amet earum delectus nemo illo esse aliquam, consectetur itaque perspiciatis rerum voluptatum consequatur pariatur?
-                </p>
-              </v-card-text>
-              <v-divider></v-divider>              
-
-              <v-card-text >
-                <p>Hochzeit</p>
-                <p class="ml-5 xsPortfolio">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit non aliquid cumque dolorem illum natus minima, amet earum delectus nemo illo esse aliquam, consectetur itaque perspiciatis rerum voluptatum consequatur pariatur?
-                </p>
-              </v-card-text>
-              <v-divider></v-divider>
-
-              <v-card-text >
-                <p>Pärchen</p>
-                <p class="ml-5 xsPortfolio">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit non aliquid cumque dolorem illum natus minima, amet earum delectus nemo illo esse aliquam, consectetur itaque perspiciatis rerum voluptatum consequatur pariatur?
-                </p>
-              </v-card-text>
-              <v-divider></v-divider>
-
-              <v-card-text >
-                <p>Akt</p>
-                <p class="ml-5 xsPortfolio">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit non aliquid cumque dolorem illum natus minima, amet earum delectus nemo illo esse aliquam, consectetur itaque perspiciatis rerum voluptatum consequatur pariatur?
-                </p>
-              </v-card-text>
-            </v-card>
-
-
           </v-content>
 
           <!-- Footer -->
