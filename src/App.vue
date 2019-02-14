@@ -1,8 +1,9 @@
 <template>
   <v-app dark>
+   
     <v-container fill-height class="pa-2">
       <v-layout align-center justify-center>
-        <v-flex lg8 md10 sm11 xs12>
+        <v-flex xl8 lg9 md10 sm11 xs12>
           <v-img
             app
             :src="require(`@/assets/header-img.png`)"
@@ -23,13 +24,57 @@
               </v-flex>
             </v-layout>
           </v-img>
-          <v-toolbar class="sticky" app>
+          
+          <!-- Navigation Drawer -->
+
+          <v-navigation-drawer
+            v-model="drawer"
+            app
+            fixed
+            temporary
+            clipped
+            right
+            class="hidden-lg-and-up"
+            width="200"
+          >
+            <v-list>
+              <v-list-tile @click="">
+                <v-list-tile-action>
+                  <v-icon>home</v-icon>
+                </v-list-tile-action>
+                <v-list-tile-content>
+                  <v-list-tile-title>Home</v-list-tile-title>
+                </v-list-tile-content>
+              </v-list-tile>
+              <v-list-tile @click="">
+                <v-list-tile-action>
+                  <v-icon>photo_library</v-icon>
+                </v-list-tile-action>
+                <v-list-tile-content>
+                  <v-list-tile-title>Portfolio</v-list-tile-title>
+                </v-list-tile-content>
+              </v-list-tile>
+              <v-list-tile @click="">
+                <v-list-tile-action>
+                  <v-icon>message</v-icon>
+                </v-list-tile-action>
+                <v-list-tile-content>
+                  <v-list-tile-title>Kontakt</v-list-tile-title>
+                </v-list-tile-content>
+              </v-list-tile>
+            </v-list>
+          </v-navigation-drawer> 
+          
+
+          <!-- Toolbar -->
+
+          <v-toolbar class="sticky" app clipped-right>
             <v-toolbar-title class="pacifico">
               <v-icon class="pb-1">camera_alt</v-icon>
               A. Marsolin
             </v-toolbar-title>
             <v-spacer></v-spacer>
-            <v-toolbar-items class="hidden-xs-only">
+            <v-toolbar-items class="hidden-sm-and-down">
               <v-btn flat>
                 <v-icon>home</v-icon>
                 Home
@@ -38,15 +83,29 @@
                 <v-icon>photo_library</v-icon>
                 Portfolio
               </v-btn>
-              <v-btn flat>
+              <v-btn flat class="pr-0">
                 <v-icon>message</v-icon>
                 Kontakt
               </v-btn>
             </v-toolbar-items>
+
+            <!-- Menu -->
+
+            <v-toolbar-side-icon
+              @click.stop="drawer = !drawer"
+              class="hidden-md-and-up ma-3"
+              large
+            >
+              Menu
+              <v-icon>menu</v-icon>
+            </v-toolbar-side-icon>
           </v-toolbar>
-        
+
+          <!-- Main -->
+
           <v-content class="pa-0">
             <Carousel />
+
             <div>
               <p>
                 <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut nemo, dolore enim quo, reiciendis facere necessitatibus ipsa tempore et sunt magnam vero saepe voluptatem tenetur eaque praesentium iusto veniam! Amet?</span>
@@ -103,6 +162,8 @@
             </div>
           </v-content>
 
+          <!-- Footer -->
+
           <v-footer class="pa-3">
             <v-spacer></v-spacer>
             <div>&copy; {{ new Date().getFullYear() }} by Anke Marsolin</div>
@@ -157,10 +218,9 @@ export default {
   components: {
     Carousel
   },
-  data () {
-    return {
-      //
-    }
-  }
+
+  data: () => ({
+    drawer: false
+  })
 }
 </script>
