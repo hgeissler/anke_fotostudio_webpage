@@ -140,28 +140,31 @@
 
               <v-card-text >
                 <p>Portrait</p>
-                <p class="ml-5">
+                <p class="ml-5 xsPortfolio">
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit non aliquid cumque dolorem illum natus minima, amet earum delectus nemo illo esse aliquam, consectetur itaque perspiciatis rerum voluptatum consequatur pariatur?
                 </p>
               </v-card-text>
+              <v-divider></v-divider>              
 
               <v-card-text >
                 <p>Hochzeit</p>
-                <p class="ml-5">
+                <p class="ml-5 xsPortfolio">
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit non aliquid cumque dolorem illum natus minima, amet earum delectus nemo illo esse aliquam, consectetur itaque perspiciatis rerum voluptatum consequatur pariatur?
                 </p>
               </v-card-text>
+              <v-divider></v-divider>
 
               <v-card-text >
                 <p>Pärchen</p>
-                <p class="ml-5">
+                <p class="ml-5 xsPortfolio">
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit non aliquid cumque dolorem illum natus minima, amet earum delectus nemo illo esse aliquam, consectetur itaque perspiciatis rerum voluptatum consequatur pariatur?
                 </p>
               </v-card-text>
+              <v-divider></v-divider>
 
               <v-card-text >
                 <p>Akt</p>
-                <p class="ml-5">
+                <p class="ml-5 xsPortfolio">
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit non aliquid cumque dolorem illum natus minima, amet earum delectus nemo illo esse aliquam, consectetur itaque perspiciatis rerum voluptatum consequatur pariatur?
                 </p>
               </v-card-text>
@@ -250,6 +253,12 @@
    #subheader {
      font-size: 16px;
    }
+  }
+
+  @media (max-width: 600px) {
+    .xsPortfolio {
+      margin-left: 0px !important;
+    }
   }
 </style> 
 
