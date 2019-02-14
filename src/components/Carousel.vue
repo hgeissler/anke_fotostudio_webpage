@@ -108,7 +108,7 @@
     <v-carousel 
       delimiter-icon="stop"
       class="hidden-lg-and-down"
-      height="600px"
+      height="550px"
     >
       <v-carousel-item
         v-for="(item, i) in items"
@@ -153,7 +153,7 @@
   }
 
   .xl {
-    line-height: 552px;
+    line-height: 502px;
   }
 </style>
 
