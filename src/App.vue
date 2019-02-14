@@ -116,11 +116,15 @@
             <Carousel />
 
             <!-- Layout -->
-            <v-layout class="mt-3" row wrap>
+
+            <!-- lg & xl -->
+
+            <v-layout class="mt-3 hidden-sm-and-down" row wrap>
+              
 
               <!-- Portfolio -->
 
-              <v-flex d-flex xl7 class="pr-3">
+              <v-flex d-flex md7 class="pr-3">
 
                 <v-card>
                   <v-card-title class="headline grey darken-2">
@@ -160,7 +164,7 @@
                 </v-card>
               </v-flex>
 
-              <v-flex d-flex xl5>
+              <v-flex d-flex md5>
                 <v-layout row wrap>
 
                   <!-- quote -->
@@ -188,7 +192,36 @@
                   </v-flex>
                 </v-layout>
               </v-flex>
+            </v-layout>
 
+            <!-- xs & sm -->
+
+            <!-- Layout -->
+
+            <v-layout class="mt-3 hidden-md-and-up" row wrap>
+
+              <!-- quote -->
+
+              <v-flex xs12>
+                <v-card class="teal">
+                  <v-card-text class="kalam">
+                    „Auf einem guten Foto sehen wir die Welt so, wie wir sie kennen. <br>
+                    Ein klasse Foto zeigt die Welt, wie wir sie noch nie gesehen haben.”
+                  </v-card-text>
+                </v-card>
+              </v-flex>
+
+              <!-- Portfolio -->
+
+              <v-flex xs12>
+
+              </v-flex>
+
+              <!-- About me -->
+
+              <v-flex xs12>
+
+              </v-flex>
 
             </v-layout>
           </v-content>
