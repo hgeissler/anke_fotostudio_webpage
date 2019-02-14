@@ -1,8 +1,11 @@
 <template>
   <v-layout>
+    <!-- xs -->
+
     <v-carousel 
       delimiter-icon="stop"
-      class="hidden-sm-and-down hidden-lg-and-up"
+      class="hidden-sm-and-up"
+      height="350px"
     >
       <v-carousel-item
         v-for="(item, i) in items"
@@ -13,20 +16,22 @@
         <v-container>
           <v-layout column fill-height justify-center align-center>
             <v-flex xs12>
-              <span v-if="i == 0" class="imgheadline">Portrait</span>
-              <span v-if="i == 1" class="imgheadline">Hochzeit</span>
-              <span v-if="i == 2" class="imgheadline">Pärchen</span>
-              <span v-if="i == 3" class="imgheadline">Akt</span>
+              <span v-if="i == 0" class="imgheadline xs">Portrait</span>
+              <span v-if="i == 1" class="imgheadline xs">Hochzeit</span>
+              <span v-if="i == 2" class="imgheadline xs">Pärchen</span>
+              <span v-if="i == 3" class="imgheadline xs">Akt</span>
             </v-flex>
           </v-layout>
         </v-container>
       </v-carousel-item>
     </v-carousel>
 
+    <!-- sm -->
+
     <v-carousel 
       delimiter-icon="stop"
-      class="hidden-md-and-up"
-      height="350px"
+      class="hidden-md-and-up hidden-xs-only"
+      height="400px"
     >
       <v-carousel-item
         v-for="(item, i) in items"
@@ -47,9 +52,62 @@
       </v-carousel-item>
     </v-carousel>
 
+    <!-- md -->
+
     <v-carousel 
       delimiter-icon="stop"
-      class="hidden-md-and-down"
+      class="hidden-sm-and-down hidden-lg-and-up"
+      height="450px"
+    >
+      <v-carousel-item
+        v-for="(item, i) in items"
+        :key="i"
+        :src="item.src"
+        lazy
+      >
+        <v-container>
+          <v-layout column fill-height justify-center align-center>
+            <v-flex xs12>
+              <span v-if="i == 0" class="imgheadline md">Portrait</span>
+              <span v-if="i == 1" class="imgheadline md">Hochzeit</span>
+              <span v-if="i == 2" class="imgheadline md">Pärchen</span>
+              <span v-if="i == 3" class="imgheadline md">Akt</span>
+            </v-flex>
+          </v-layout>
+        </v-container>
+      </v-carousel-item>
+    </v-carousel>
+
+    <!-- lg -->
+
+    <v-carousel 
+      delimiter-icon="stop"
+      class="hidden-md-and-down hidden-xl-only"
+    >
+      <v-carousel-item
+        v-for="(item, i) in items"
+        :key="i"
+        :src="item.src"
+        lazy
+      >
+        <v-container>
+          <v-layout column fill-height justify-center align-center>
+            <v-flex xs12>
+              <span v-if="i == 0" class="imgheadline">Portrait</span>
+              <span v-if="i == 1" class="imgheadline">Hochzeit</span>
+              <span v-if="i == 2" class="imgheadline">Pärchen</span>
+              <span v-if="i == 3" class="imgheadline">Akt</span>
+            </v-flex>
+          </v-layout>
+        </v-container>
+      </v-carousel-item>
+    </v-carousel>    
+
+    <!-- xl -->
+
+    <v-carousel 
+      delimiter-icon="stop"
+      class="hidden-lg-and-down"
       height="600px"
     >
       <v-carousel-item
@@ -61,10 +119,10 @@
         <v-container>
           <v-layout column fill-height justify-center align-center>
             <v-flex xs12>
-              <span v-if="i == 0" class="imgheadline lg">Portrait</span>
-              <span v-if="i == 1" class="imgheadline lg">Hochzeit</span>
-              <span v-if="i == 2" class="imgheadline lg">Pärchen</span>
-              <span v-if="i == 3" class="imgheadline lg">Akt</span>
+              <span v-if="i == 0" class="imgheadline xl">Portrait</span>
+              <span v-if="i == 1" class="imgheadline xl">Hochzeit</span>
+              <span v-if="i == 2" class="imgheadline xl">Pärchen</span>
+              <span v-if="i == 3" class="imgheadline xl">Akt</span>
             </v-flex>
           </v-layout>
         </v-container>
@@ -82,11 +140,19 @@
     opacity: 0.4;
   }
 
-  .sm {
+  .xs {
     line-height: 318px;
   }
 
-  .lg {
+  .sm {
+    line-height: 368px;
+  }
+
+  .md {
+    line-height: 402px;
+  }
+
+  .xl {
     line-height: 552px;
   }
 </style>
