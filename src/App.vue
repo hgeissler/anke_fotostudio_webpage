@@ -8,7 +8,7 @@
       <v-layout 
         align-center justify-center
       >
-        <v-flex xl8 lg9 md10 sm11 xs12>
+        <v-flex xl8 lg9 md10 sm11 xs12 id="page">
           <v-img
             app
             :src="require(`@/assets/header-img.png`)"
@@ -119,7 +119,7 @@
 
             <v-layout 
               row reverse 
-              class="mt-4"
+              class="mt-3"
             >
               <v-flex xl5 lg6 md7 sm8 xs12>
                 <v-card class="teal">
@@ -131,13 +131,42 @@
               </v-flex>
             </v-layout>
 
-            <v-layout>
-              <v-flex>
-                <v-card>
+            <!-- Portfolio -->
 
-                </v-card>
-              </v-flex>
-            </v-layout>
+            <v-card class="mt-3">
+              <v-card-title class="headline grey darken-2">
+                Portfolio
+              </v-card-title>
+
+              <v-card-text >
+                <p>Portrait</p>
+                <p class="ml-5">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit non aliquid cumque dolorem illum natus minima, amet earum delectus nemo illo esse aliquam, consectetur itaque perspiciatis rerum voluptatum consequatur pariatur?
+                </p>
+              </v-card-text>
+
+              <v-card-text >
+                <p>Hochzeit</p>
+                <p class="ml-5">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit non aliquid cumque dolorem illum natus minima, amet earum delectus nemo illo esse aliquam, consectetur itaque perspiciatis rerum voluptatum consequatur pariatur?
+                </p>
+              </v-card-text>
+
+              <v-card-text >
+                <p>Pärchen</p>
+                <p class="ml-5">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit non aliquid cumque dolorem illum natus minima, amet earum delectus nemo illo esse aliquam, consectetur itaque perspiciatis rerum voluptatum consequatur pariatur?
+                </p>
+              </v-card-text>
+
+              <v-card-text >
+                <p>Akt</p>
+                <p class="ml-5">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit non aliquid cumque dolorem illum natus minima, amet earum delectus nemo illo esse aliquam, consectetur itaque perspiciatis rerum voluptatum consequatur pariatur?
+                </p>
+              </v-card-text>
+            </v-card>
+
 
           </v-content>
 
@@ -193,6 +222,10 @@
 
   .kalam {
     font: 22px 'Kalam';
+  }
+
+  #page {
+    box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2), 0px 2px 2px 0px rgba(0,0,0,0.14), 0px 1px 5px 0px rgba(0,0,0,0.12);
   }
 
   .sticky {
