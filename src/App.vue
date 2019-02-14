@@ -1,8 +1,13 @@
 <template>
   <v-app dark>
    
-    <v-container fill-height class="pa-2">
-      <v-layout align-center justify-center>
+    <v-container 
+      fill-height 
+      class="pa-2"
+    >
+      <v-layout 
+        align-center justify-center
+      >
         <v-flex xl8 lg9 md10 sm11 xs12>
           <v-img
             app
@@ -68,7 +73,11 @@
 
           <!-- Toolbar -->
 
-          <v-toolbar class="sticky" app clipped-right>
+          <v-toolbar 
+            class="sticky" 
+            app 
+            clipped-right
+          >
             <v-toolbar-title class="pacifico">
               <v-icon class="pb-1">camera_alt</v-icon>
               A. Marsolin
@@ -108,12 +117,25 @@
 
             <!-- quote -->
 
-            <v-layout row reverse class="mt-4">
+            <v-layout 
+              row reverse 
+              class="mt-4"
+            >
               <v-flex xl5 lg6 md7 sm8 xs12>
-                <p class="kalam">
-                  „Auf einem guten Foto sehen wir die Welt so, wie wir sie kennen. <br>
-                  Ein klasse Foto zeigt die Welt, wie wir sie noch nie gesehen haben.”
-                </p>
+                <v-card class="teal">
+                  <v-card-text class="kalam">
+                    „Auf einem guten Foto sehen wir die Welt so, wie wir sie kennen. <br>
+                    Ein klasse Foto zeigt die Welt, wie wir sie noch nie gesehen haben.”
+                  </v-card-text>
+                </v-card>
+              </v-flex>
+            </v-layout>
+
+            <v-layout>
+              <v-flex>
+                <v-card>
+
+                </v-card>
               </v-flex>
             </v-layout>
 
@@ -121,9 +143,36 @@
 
           <!-- Footer -->
 
-          <v-footer class="pa-3">
-            <v-spacer></v-spacer>
-            <div>&copy; {{ new Date().getFullYear() }} by Anke Marsolin</div>
+          <v-footer class="pa-0 mt-3" height="auto" dark>
+            <v-card
+              class="flex"
+              flat
+              tile
+            >
+              <v-card-title class="teal">
+                <v-spacer></v-spacer>
+                <v-btn
+                  dark
+                  icon
+                >
+                  <v-icon size="24px">fab fa-facebook</v-icon>
+                </v-btn>
+                <v-btn
+                  class="mx-3"
+                  dark
+                  icon
+                >
+                  <v-icon size="24px">fab fa-instagram</v-icon>
+                </v-btn>
+                <v-spacer></v-spacer>
+              </v-card-title>
+
+              <v-card-actions
+                class="grey darken-3 justify-center"
+              >
+                &copy; {{ new Date().getFullYear() }} by Anke Marsolin
+              </v-card-actions>
+            </v-card>
           </v-footer>
         </v-flex>
       </v-layout>
