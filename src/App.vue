@@ -217,7 +217,7 @@
               <!-- Portfolio -->
 
               <v-flex xs12 class="mt-3">
-                <v-expansion-panel id="smPortfolio">
+                <v-expansion-panel id="smPortfolio" :value=0>
                   <v-expansion-panel-content>
                     <div slot="header">Portrait</div>
                     <v-card>
