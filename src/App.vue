@@ -252,9 +252,33 @@
               </v-card-title>
 
               <v-card-actions
-                class="grey darken-3 justify-center"
+                class="grey darken-3"
               >
-                &copy; {{ new Date().getFullYear() }} by Anke Marsolin
+                <v-layout column align-center>
+                  <v-flex xs12>
+                    <p>
+                      <span class="body-2">Impressum:</span> <br>
+                      Angaben gemäß § 5 TMG <br>
+                      Anke Marsolin Fotografie <br>
+                      Beispielstraße 12 <br>
+                      31195 Lamspringe <br>
+
+                      Handelsregister: 123456 <br>
+                      Registergericht: Hildesheim
+                    </p>
+                  </v-flex>
+                  <v-flex xs12>
+                    <p>
+                      &copy; {{ new Date().getFullYear() }} <span class="body-2">by Anke Marsolin</span>
+                    </p>
+                  </v-flex>
+
+                  <v-flex xs12>
+                    <p class="caption">
+                      Webdesign: geissler.hannes@googlemail.com
+                    </p>
+                  </v-flex>
+                </v-layout>
               </v-card-actions>
             </v-card>
           </v-footer>
