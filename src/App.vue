@@ -207,7 +207,7 @@
 
               <v-flex xs12>
                 <v-card class="teal">
-                  <v-card-text class="kalam">
+                  <v-card-text class="kalam pt-2 pb-2">
                     „Auf einem guten Foto sehen wir die Welt so, wie wir sie kennen. <br>
                     Ein klasse Foto zeigt die Welt, wie wir sie noch nie gesehen haben.”
                   </v-card-text>
@@ -377,7 +377,7 @@
   }
 
   .kalam {
-    font: 22px 'Kalam';
+    font: 18px 'Kalam';
   }
 
   #page {
