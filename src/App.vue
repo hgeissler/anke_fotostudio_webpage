@@ -206,7 +206,7 @@
               <!-- quote -->
 
               <v-flex xs12>
-                <v-card class="smQuoteGradient">
+                <v-card class="quoteGradient">
                   <v-card-text class="kalam pt-2 pb-2">
                     „Auf einem guten Foto sehen wir die Welt so, wie wir sie kennen. <br>
                     Ein klasse Foto zeigt die Welt, wie wir sie noch nie gesehen haben.”
@@ -414,12 +414,8 @@
     background: linear-gradient(to bottom right, #7c7c7c, #979797);
   }
 
-  .smQuoteGradient {
-    background: radial-gradient(#009688, #00897c );
-  }
-
   .quoteGradient {
-    background: radial-gradient(#535353, #424242 );
+    background: radial-gradient(#009688, #00897c );
   }
 
   @media (max-width: 600px) {
