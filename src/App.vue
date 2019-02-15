@@ -171,7 +171,7 @@
                   <!-- quote -->
 
                   <v-flex d-flex class="pb-3">
-                    <v-card class="teal">
+                    <v-card class="quoteGradient">
                       <v-card-text class="kalam">
                         „Auf einem guten Foto sehen wir die Welt so, wie wir sie kennen. <br>
                         Ein klasse Foto zeigt die Welt, wie wir sie noch nie gesehen haben.”
@@ -206,7 +206,7 @@
               <!-- quote -->
 
               <v-flex xs12>
-                <v-card class="teal">
+                <v-card class="smQuoteGradient">
                   <v-card-text class="kalam pt-2 pb-2">
                     „Auf einem guten Foto sehen wir die Welt so, wie wir sie kennen. <br>
                     Ein klasse Foto zeigt die Welt, wie wir sie noch nie gesehen haben.”
@@ -220,7 +220,7 @@
                 <v-expansion-panel id="smPortfolio" :value=0>
                   <v-expansion-panel-content>
                     <div slot="header">Portrait</div>
-                    <v-card>
+                    <v-card class="smPortfolioGradient">
                       <v-card-text>
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore cum error quia quae minima? Quo nemo eligendi voluptas mollitia explicabo debitis repudiandae eius doloribus? Incidunt, praesentium facilis? Doloremque, officia aliquid.
                       </v-card-text>
@@ -229,7 +229,7 @@
 
                   <v-expansion-panel-content>
                     <div slot="header">Hochzeit</div>
-                    <v-card>
+                    <v-card class="smPortfolioGradient">
                       <v-card-text>
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore cum error quia quae minima? Quo nemo eligendi voluptas mollitia explicabo debitis repudiandae eius doloribus? Incidunt, praesentium facilis? Doloremque, officia aliquid.
                       </v-card-text>
@@ -238,7 +238,7 @@
 
                   <v-expansion-panel-content>
                     <div slot="header">Pärchen</div>
-                    <v-card>
+                    <v-card class="smPortfolioGradient">
                       <v-card-text>
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore cum error quia quae minima? Quo nemo eligendi voluptas mollitia explicabo debitis repudiandae eius doloribus? Incidunt, praesentium facilis? Doloremque, officia aliquid.
                       </v-card-text>
@@ -247,7 +247,7 @@
 
                   <v-expansion-panel-content>
                     <div slot="header">Akt</div>
-                    <v-card>
+                    <v-card class="smPortfolioGradient">
                       <v-card-text>
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore cum error quia quae minima? Quo nemo eligendi voluptas mollitia explicabo debitis repudiandae eius doloribus? Incidunt, praesentium facilis? Doloremque, officia aliquid.
                       </v-card-text>
@@ -399,8 +399,11 @@
   }
 
   .portfolioGradient {
-    background: #fff;
     background: linear-gradient(to bottom, #474747, #414141 50%, #474747);
+  }
+
+  .smPortfolioGradient {
+    background: linear-gradient(to bottom, #414141, #474747);
   }
 
   .portfolioTitleGradient {
@@ -411,6 +414,14 @@
     background: linear-gradient(to bottom right, #7c7c7c, #979797);
   }
 
+  .smQuoteGradient {
+    background: radial-gradient(#009688, #00897c );
+  }
+
+  .quoteGradient {
+    background: radial-gradient(#535353, #424242 );
+  }
+
   @media (max-width: 600px) {
    #header {
      font-size: 32px;
@@ -419,11 +430,15 @@
    #subheader {
      font-size: 16px;
    }
-  }
 
-  @media (max-width: 600px) {
     .xsPortfolio {
       margin-left: 0px !important;
+    }
+  }
+
+  @media (min-width: 960px) {
+    .kalam {
+      font: 22px Kalam;
     }
   }
 </style> 
