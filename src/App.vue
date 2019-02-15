@@ -212,16 +212,89 @@
 
               <!-- Portfolio -->
 
-              <v-flex xs12>
+              <v-flex xs12 class="mt-3">
+                <v-expansion-panel>
+                  <v-expansion-panel-content>
+                    <div slot="header">Portrait</div>
+                    <v-card>
+                      <v-card-text>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore cum error quia quae minima? Quo nemo eligendi voluptas mollitia explicabo debitis repudiandae eius doloribus? Incidunt, praesentium facilis? Doloremque, officia aliquid.
+                      </v-card-text>
+                    </v-card>
+                  </v-expansion-panel-content>
 
+                  <v-expansion-panel-content>
+                    <div slot="header">Hochzeit</div>
+                    <v-card>
+                      <v-card-text>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore cum error quia quae minima? Quo nemo eligendi voluptas mollitia explicabo debitis repudiandae eius doloribus? Incidunt, praesentium facilis? Doloremque, officia aliquid.
+                      </v-card-text>
+                    </v-card>
+                  </v-expansion-panel-content>
+
+                  <v-expansion-panel-content>
+                    <div slot="header">Pärchen</div>
+                    <v-card>
+                      <v-card-text>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore cum error quia quae minima? Quo nemo eligendi voluptas mollitia explicabo debitis repudiandae eius doloribus? Incidunt, praesentium facilis? Doloremque, officia aliquid.
+                      </v-card-text>
+                    </v-card>
+                  </v-expansion-panel-content>
+
+                  <v-expansion-panel-content>
+                    <div slot="header">Akt</div>
+                    <v-card>
+                      <v-card-text>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore cum error quia quae minima? Quo nemo eligendi voluptas mollitia explicabo debitis repudiandae eius doloribus? Incidunt, praesentium facilis? Doloremque, officia aliquid.
+                      </v-card-text>
+                    </v-card>
+                  </v-expansion-panel-content>
+                </v-expansion-panel>
               </v-flex>
 
               <!-- About me -->
 
-              <v-flex xs12>
+              <v-flex d-flex class="mt-3">
+                <v-card class="aboutMeGradient darken-2">
+                  <v-card-text class="body-1">
 
+                    <v-layout row wrap align-center>
+                      <v-flex xs12 sm7>
+                        <p class="headline">
+                          Über Mich:
+                        </p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid cumque quae a nesciunt? Natus, molestias. Accusantium repudiandae necessitatibus hic quos nesciunt, magnam aliquid laborum explicabo sequi fugiat laudantium maxime provident.</p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione eaque possimus rem est? Molestiae quo optio animi modi, in natus. Deleniti doloribus tempore molestiae voluptatibus non amet aperiam, quos aliquam.</p>
+                      </v-flex>
+
+                      <v-flex xs12 sm5 >
+                        <img 
+                          src="@/assets/logo.svg" height="180px" align="right"
+                        >
+                      </v-flex>
+                    </v-layout>
+
+                  </v-card-text>
+                </v-card>
               </v-flex>
 
+            </v-layout>
+
+            <!-- Contact -->
+
+            <v-layout class="mt-3" row wrap justify-center>
+              <v-flex xs12>
+                <p class="text-xs-center">
+                  <span class="headline">Kontakt:</span> <br>
+                  <span class="subheading">
+                    Telefon: 012345/45678 <br>
+                    E-mail: anke@marsolin.de <br>
+                  </span>
+                </p>
+              </v-flex>
+              <v-flex xs11 lg6 md8 sm9>
+                 <p class="text-xs-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit debitis, ipsa quae veniam impedit voluptates id. Repellat quis iste, repudiandae natus quaerat, a culpa accusantium sed, rerum nobis labore voluptatum.</p>
+              </v-flex>
             </v-layout>
           </v-content>
 
