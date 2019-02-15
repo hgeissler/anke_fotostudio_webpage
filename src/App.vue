@@ -446,6 +446,7 @@ export default {
   methods: {
     scrollFunc: function (target) {
       this.$vuetify.goTo(target);
+      this.drawer = false;
     }  
   }
 }
