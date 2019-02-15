@@ -127,35 +127,32 @@
               <v-flex d-flex md7 class="pr-3">
 
                 <v-card>
-                  <v-card-title class="headline grey darken-2">
+                  <v-card-title class="headline portfolioTitleGradient">
                     Portfolio
                   </v-card-title>
 
-                  <v-card-text >
+                  <v-card-text class="portfolioGradient">
                     <p>Portrait</p>
                     <p class="ml-5 xsPortfolio">
                       Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit non aliquid cumque dolorem illum natus minima, amet earum delectus nemo illo esse aliquam, consectetur itaque perspiciatis rerum voluptatum consequatur pariatur?
                     </p>
                   </v-card-text>
-                  <v-divider></v-divider>              
 
-                  <v-card-text >
+                  <v-card-text class="portfolioGradient">
                     <p>Hochzeit</p>
                     <p class="ml-5 xsPortfolio">
                       Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit non aliquid cumque dolorem illum natus minima, amet earum delectus nemo illo esse aliquam, consectetur itaque perspiciatis rerum voluptatum consequatur pariatur?
                     </p>
                   </v-card-text>
-                  <v-divider></v-divider>
 
-                  <v-card-text >
+                  <v-card-text class="portfolioGradient">
                     <p>Pärchen</p>
                     <p class="ml-5 xsPortfolio">
                       Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit non aliquid cumque dolorem illum natus minima, amet earum delectus nemo illo esse aliquam, consectetur itaque perspiciatis rerum voluptatum consequatur pariatur?
                     </p>
                   </v-card-text>
-                  <v-divider></v-divider>
 
-                  <v-card-text >
+                  <v-card-text class="portfolioGradient">
                     <p>Akt</p>
                     <p class="ml-5 xsPortfolio">
                       Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit non aliquid cumque dolorem illum natus minima, amet earum delectus nemo illo esse aliquam, consectetur itaque perspiciatis rerum voluptatum consequatur pariatur?
@@ -180,13 +177,15 @@
 
                   <!-- About me: -->
                   <v-flex d-flex>
-                    <v-card class="grey darken-2">
+                    <v-card class="aboutMeGradient darken-2">
                       <v-card-title class="headline">
                         Über Mich:
                       </v-card-title>
                       <v-card-text class="body-1">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid cumque quae a nesciunt? Natus, molestias. Accusantium repudiandae necessitatibus hic quos nesciunt, magnam aliquid laborum explicabo sequi fugiat laudantium maxime provident.</p>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione eaque possimus rem est? Molestiae quo optio animi modi, in natus. Deleniti doloribus tempore molestiae voluptatibus non amet aperiam, quos aliquam.</p>
+                        <img src="@/assets/logo.svg" height="180px" align="right"
+                        >
                       </v-card-text>
                     </v-card>
                   </v-flex>
@@ -296,6 +295,19 @@
   #header {
     font-size: 44px;
     text-shadow: 2px 3px 2px #333;
+  }
+
+  .portfolioGradient {
+    background: #fff;
+    background: linear-gradient(to bottom, #474747, #414141 50%, #474747);
+  }
+
+  .portfolioTitleGradient {
+    background: linear-gradient(to bottom right, #8a8a8a, #979797);
+  }
+
+  .aboutMeGradient {
+    background: linear-gradient(to bottom right, #7c7c7c, #979797);
   }
 
   @media (max-width: 600px) {
