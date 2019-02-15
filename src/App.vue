@@ -10,6 +10,7 @@
       >
         <v-flex xl8 lg9 md10 sm11 xs12 id="page">
           <v-img
+            id="home"
             app
             :src="require(`@/assets/header-img.png`)"
             height="25vh"
@@ -43,7 +44,7 @@
             width="200"
           >
             <v-list>
-              <v-list-tile @click="">
+              <v-list-tile @click="scrollFunc('#home')">
                 <v-list-tile-action>
                   <v-icon>home</v-icon>
                 </v-list-tile-action>
@@ -51,7 +52,7 @@
                   <v-list-tile-title>Home</v-list-tile-title>
                 </v-list-tile-content>
               </v-list-tile>
-              <v-list-tile @click="">
+              <v-list-tile @click="scrollFunc('#smPortfolio')">
                 <v-list-tile-action>
                   <v-icon>photo_library</v-icon>
                 </v-list-tile-action>
@@ -59,7 +60,7 @@
                   <v-list-tile-title>Portfolio</v-list-tile-title>
                 </v-list-tile-content>
               </v-list-tile>
-              <v-list-tile @click="">
+              <v-list-tile @click="scrollFunc('#contact')">
                 <v-list-tile-action>
                   <v-icon>message</v-icon>
                 </v-list-tile-action>
@@ -84,15 +85,15 @@
             </v-toolbar-title>
             <v-spacer></v-spacer>
             <v-toolbar-items class="hidden-sm-and-down">
-              <v-btn flat>
+              <v-btn flat @click="scrollFunc('#home')">
                 <v-icon>home</v-icon>
                 Home
               </v-btn>
-              <v-btn flat>
+              <v-btn flat @click="scrollFunc('#portfolio')">
                 <v-icon>photo_library</v-icon>
                 Portfolio
               </v-btn>
-              <v-btn flat class="pr-0">
+              <v-btn flat class="r-0" @click="scrollFunc('#contact')">
                 <v-icon>message</v-icon>
                 Kontakt
               </v-btn>
@@ -127,7 +128,10 @@
               <v-flex d-flex md7 class="pr-3">
 
                 <v-card>
-                  <v-card-title class="headline portfolioTitleGradient">
+                  <v-card-title 
+                    class="headline portfolioTitleGradient"
+                    id="portfolio"
+                  >
                     Portfolio
                   </v-card-title>
 
@@ -213,7 +217,7 @@
               <!-- Portfolio -->
 
               <v-flex xs12 class="mt-3">
-                <v-expansion-panel>
+                <v-expansion-panel id="smPortfolio">
                   <v-expansion-panel-content>
                     <div slot="header">Portrait</div>
                     <v-card>
@@ -284,7 +288,7 @@
 
             <v-layout class="mt-3" row wrap justify-center>
               <v-flex xs12>
-                <p class="text-xs-center">
+                <p class="text-xs-center" id="contact">
                   <span class="headline">Kontakt:</span> <br>
                   <span class="subheading">
                     Telefon: 012345/45678 <br>
@@ -425,6 +429,8 @@
 </style> 
 
 <script>
+import Vue from 'vue'
+import Vuetify from 'vuetify'
 import Carousel from './components/Carousel'
 
 export default {
@@ -435,6 +441,12 @@ export default {
 
   data: () => ({
     drawer: false
-  })
+  }),
+
+  methods: {
+    scrollFunc: function (target) {
+      this.$vuetify.goTo(target);
+    }  
+  }
 }
 </script>
