@@ -408,7 +408,7 @@
   }
 
   .aboutMeGradient {
-    background: linear-gradient(to bottom right, #7c7c7c, #979797);
+    background: linear-gradient(to bottom right, #909090, #9e9e9e);
   }
 
   .v-expansion-panel__header {
