@@ -170,7 +170,7 @@
                   <!-- quote -->
 
                 <v-flex xs12>
-                  <div class="kalam pt-2 mb-3 ml-3">
+                  <div class="kalam pt-2 mb-3 ml-3 mr-3">
                     „Auf einem guten Foto sehen wir die Welt so, wie wir sie kennen. <br>
                     Ein klasse Foto zeigt die Welt, wie wir sie noch nie gesehen haben.”
                   </div>
@@ -203,7 +203,7 @@
               <!-- quote -->
 
               <v-flex xs12>
-                  <div class="kalam pt-2 pb-2 ml-3">
+                  <div class="kalam pt-2 pb-2 ml-3 mr-3">
                     „Auf einem guten Foto sehen wir die Welt so, wie wir sie kennen. <br>
                     Ein klasse Foto zeigt die Welt, wie wir sie noch nie gesehen haben.”
                   </div>
@@ -376,7 +376,9 @@
   }
 
   #page {
-    box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2), 0px 2px 2px 0px rgba(0,0,0,0.14), 0px 1px 5px 0px rgba(0,0,0,0.12);
+    box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2), 
+                0px 2px 2px 0px rgba(0,0,0,0.14), 
+                0px 1px 5px 0px rgba(0,0,0,0.12);
   }
 
   .sticky {
@@ -409,8 +411,8 @@
     background: linear-gradient(to bottom right, #7c7c7c, #979797);
   }
 
-  .quoteGradient {
-    background: radial-gradient(#009688, #00897c );
+  .v-expansion-panel__header {
+    padding-left: 16px;
   }
 
   @media (max-width: 600px) {
