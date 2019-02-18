@@ -11,7 +11,6 @@
         v-for="(item, i) in items"
         :key="i"
         :src="item.src"
-        lazy
       >
         <v-container>
           <v-layout column fill-height justify-center align-center>
@@ -37,7 +36,6 @@
         v-for="(item, i) in items"
         :key="i"
         :src="item.src"
-        lazy
       >
         <v-container>
           <v-layout column fill-height justify-center align-center>
@@ -63,7 +61,6 @@
         v-for="(item, i) in items"
         :key="i"
         :src="item.src"
-        lazy
       >
         <v-container>
           <v-layout column fill-height justify-center align-center>
@@ -88,7 +85,6 @@
         v-for="(item, i) in items"
         :key="i"
         :src="item.src"
-        lazy
       >
         <v-container>
           <v-layout column fill-height justify-center align-center>
@@ -114,7 +110,6 @@
         v-for="(item, i) in items"
         :key="i"
         :src="item.src"
-        lazy
       >
         <v-container>
           <v-layout column fill-height justify-center align-center>
