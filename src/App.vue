@@ -135,8 +135,6 @@
                     </p>
                   </v-card-text>
 
-                  <v-divider></v-divider>
-
                   <v-card-text>
                     <p>Hochzeit</p>
                     <p class="ml-5">
@@ -144,16 +142,12 @@
                     </p>
                   </v-card-text>
 
-                  <v-divider></v-divider>
-
                   <v-card-text>
                     <p>Pärchen</p>
                     <p class="ml-5">
                       Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit non aliquid cumque dolorem illum natus minima, amet earum delectus nemo illo esse aliquam, consectetur itaque perspiciatis rerum voluptatum consequatur pariatur?
                     </p>
                   </v-card-text>
-
-                  <v-divider></v-divider>
 
                   <v-card-text>
                     <p>Akt</p>
@@ -170,7 +164,7 @@
                   <!-- quote -->
 
                 <v-flex xs12>
-                  <div class="kalam pt-2 mb-3 ml-3 mr-3">
+                  <div class="sacramento pt-2 mb-3 ml-3 mr-3">
                     „Auf einem guten Foto sehen wir die Welt so, wie wir sie kennen. <br>
                     Ein klasse Foto zeigt die Welt, wie wir sie noch nie gesehen haben.”
                   </div>
@@ -203,7 +197,7 @@
               <!-- quote -->
 
               <v-flex xs12>
-                  <div class="kalam pt-2 pb-2 ml-3 mr-3">
+                  <div class="sacramento pt-2 pb-2 ml-3 mr-3">
                     „Auf einem guten Foto sehen wir die Welt so, wie wir sie kennen. <br>
                     Ein klasse Foto zeigt die Welt, wie wir sie noch nie gesehen haben.”
                   </div>
@@ -361,7 +355,7 @@
 </template>
 
 <style>
-  @import url('https://fonts.googleapis.com/css?family=Comfortaa|Pacifico|Kalam');
+  @import url('https://fonts.googleapis.com/css?family=Comfortaa|Pacifico|Sacramento');
 
   .pacifico {
     font-family: Pacifico;
@@ -371,8 +365,8 @@
     font-family: Comfortaa;
   }
 
-  .kalam {
-    font: 18px 'Kalam';
+  .sacramento {
+    font: 28px 'Sacramento';
   }
 
   #page {
@@ -408,7 +402,7 @@
   }
 
   .aboutMeGradient {
-    background: linear-gradient(to bottom right, #909090, #9e9e9e);
+    background: linear-gradient(to bottom right, #a58e84, #a58e84 50%, #b79e93);
   }
 
   .v-expansion-panel__header {
@@ -426,8 +420,8 @@
   }
 
   @media (min-width: 960px) {
-    .kalam {
-      font: 22px Kalam;
+    .sacramento {
+      font: 30px 'Sacramento';
     }
   }
 </style> 
