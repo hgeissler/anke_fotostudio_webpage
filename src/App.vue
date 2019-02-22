@@ -293,13 +293,13 @@
 
           <!-- Footer -->
 
-          <v-footer class="pa-0 mt-3" height="auto" dark>
+          <v-footer class="pa-0 mt-3" height="auto">
             <v-card
               class="flex"
               flat
               tile
             >
-              <v-card-title class="teal">
+              <v-card-title class="footerTitle">
                 <v-spacer></v-spacer>
                 <v-btn
                   dark
@@ -403,6 +403,10 @@
 
   .aboutMeGradient {
     background: linear-gradient(to bottom right, #a85751, #a85751 50%, #af6660);
+  }
+
+  .footerTitle {
+    background: #a85751;
   }
 
   .v-expansion-panel__header {
