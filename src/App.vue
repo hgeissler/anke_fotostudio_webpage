@@ -106,7 +106,6 @@
               class="hidden-md-and-up ma-3"
               large
             >
-              Menu
               <v-icon>menu</v-icon>
             </v-toolbar-side-icon>
           </v-toolbar>
@@ -127,7 +126,7 @@
 
               <v-flex d-flex md7 class="pr-3">
 
-                <v-card>
+                <v-card id="portfolio">
                   <v-card-text>
                     <p>Portrait</p>
                     <p class="ml-5">
@@ -211,7 +210,7 @@
 
               <!-- Portfolio -->
 
-              <v-flex xs12 class="mt-3">
+              <v-flex xs12 class="mt-3" id="portfolio">
                 <v-expansion-panel id="smPortfolio" :value=0>
                   <v-expansion-panel-content>
                     <div slot="header">Portrait</div>
