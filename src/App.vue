@@ -60,7 +60,7 @@
                   <v-list-tile-title>Portfolio</v-list-tile-title>
                 </v-list-tile-content>
               </v-list-tile>
-              <v-list-tile @click="scrollFunc('#contact')">
+              <v-list-tile @click="scrollFunc('#contact')" class="pa-0">
                 <v-list-tile-action>
                   <v-icon>message</v-icon>
                 </v-list-tile-action>
@@ -103,7 +103,7 @@
 
             <v-toolbar-side-icon
               @click.stop="drawer = !drawer"
-              class="hidden-md-and-up ma-3"
+              class="hidden-md-and-up"
               large
             >
               <v-icon>menu</v-icon>
@@ -401,7 +401,7 @@
   }
 
   .aboutMeGradient {
-    background: linear-gradient(to bottom right, #a85751, #a85751 50%, #af6660);
+    background: linear-gradient(to bottom right, #a85751, #a85751 60%, #af6660);
   }
 
   .footerTitle {
@@ -425,6 +425,11 @@
   @media (min-width: 960px) {
     .sacramento {
       font: 30px 'Sacramento';
+    }
+
+    .v-toolbar__content {
+      padding-right: 0px;
+      padding-left: 16px;
     }
   }
 </style> 
